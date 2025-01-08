@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+
+        .light-blue-button {
+        text-decoration: none;
+        color: white;
+        background-color: #87cefa; /* Light blue */
+        padding: 10px 20px;
+        border-radius: 5px;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        form {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .image-container {
+            float: left;
+            width: 100%;
+            max-width: 200px;
+            height: 200px;
+            margin-right: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .form-container {
+            float: right;
+            width: 100%;
+            max-width: 200px;
+        }
+
+        @media (max-width: 768px) {
+            .image-container,
+            .form-container {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<header>
+    <div class="nav container">
+        <a href="index.html" class="light-blue-button">Home</a>
+    </div>
+</header>
+
+
+<body>
+    <h1>Sign Up</h1>
+    <form action="/post" method="post">
+        <div>
+            <img src="images/cool_kid.jpg" height="370px" width="410px">
+        </div>
+        <div class="form-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"  input placeholder="Your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" input placeholder="Your email" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" input placeholder="Your username" required>
+
+            <button type="submit">Sign Up</button>
+        </div>
+    </form>
+</body>
+</html>
